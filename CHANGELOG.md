@@ -1,6 +1,16 @@
-application_nginx Cookbook CHANGELOG
-=======================
-This file is used to list changes made in each version of the application_nginx cookbook.
+application_z_nginx Cookbook CHANGELOG
+======================================
+This file is used to list changes made in each version of the application_z_nginx cookbook.
+
+v3.0.2
+------
+
+- Renamed fork to application_z_nginx - surprise! application requires sub-resources to be found in cookbooks prefixed with application_.
+
+v3.0.0
+------
+
+- Renamed fork to z_application_nginx
 
 v2.0.2
 ------

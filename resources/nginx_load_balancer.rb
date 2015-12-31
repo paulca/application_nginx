@@ -1,6 +1,6 @@
 #
 # Author:: Noah Kantrowitz <noah@opscode.com>
-# Cookbook Name:: application_nginx
+# Cookbook Name:: application_z_nginx
 # Resource:: nginx_load_balancer
 #
 # Copyright:: 2011, Opscode, Inc <legal@opscode.com>
@@ -29,6 +29,7 @@ attribute :port, :kind_of => Integer, :default => 80
 attribute :application_port, :kind_of => Integer, :default => 8000
 attribute :application_socket, :kind_of => [Array, String, NilClass], :default => nil
 attribute :static_files, :kind_of => Hash, :default => {}
+attribute :locations, :kind_of => Hash, :default => {}
 attribute :ssl, :kind_of => [ TrueClass, FalseClass ], :default => false
 attribute :ssl_certificate, :kind_of => String, :default => "#{node['fqdn']}.crt"
 attribute :ssl_certificate_key, :kind_of => String, :default => "#{node['fqdn']}.key"
